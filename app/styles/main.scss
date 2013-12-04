@@ -1,0 +1,79 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "bootstrap-sass/lib/bootstrap";
+
+/* Put your CSS here */
+html, body {
+  margin: 20px;
+}
+
+body {
+    //background: #000000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.box_btn{
+  height:100px;
+  width:120px;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
+.btn i{
+  float:left;
+  position: ablolute;
+}
+.btn_servers{
+  width:120px;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.badge_error {
+  float: right;
+  margin-right: -20px;
+  margin-top: -10px;
+  background: #0088cc;
+  padding:0px 8px;
+  border-radius: 17px;
+  position: relative;
+  display: inline-block;
+}
+
+.badge_loading {
+  float: right;
+  margin-right: -25px;
+  margin-top: -15px;
+  padding:2px 6px 2px 6px;
+  position: relative;
+}
+
+.badge_empty {
+  float: right;
+  margin-right: -25px;
+  margin-top: -15px;
+  padding:2px 6px 2px 6px;
+  position: relative;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.nav-inverse a{
+  //color:#000000;
+}

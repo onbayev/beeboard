@@ -1,0 +1,31 @@
+<div class="row-fluid">
+    <div class="span8">
+        <div class="row-fluid">
+            <ul class="thumbnails">
+                <li ng-repeat="client in clients">
+                    <div class="span3">
+                        <a class="btn btn_servers ng-class: {true:'btn-danger', false:'btn-success'}[client.events.length > 0]" ng-click="fiterServer(client.name)">
+                            <span class="ng-class: getStyle(client)">
+                                <span ng-show="client.events.length" ng-bind="client.events.length"/>
+                                <img ng-show="!client.events" src="/images/loading.gif"/>
+                            </span>
+                            <i class="icon-thumbs-up"></i>
+                            <div>
+                                {{client.name}}
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="span4">
+       <div ng-repeat="event in events | filter:query">
+            <div class="alert ng-class: {true:'alert-error', false:'alert-block'}[isCritical(event.status)]">
+                <!--button type="button" class="close" data-dismiss="alert">&times;</button-->
+                <b>{{event.client}}</b>
+                   {{event.output}}
+            </div>
+       </div>
+    </div>
+</div>
